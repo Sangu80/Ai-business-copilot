@@ -47,3 +47,16 @@ Here’s a high-level workflow showing how components interact from UI to LLM re
 ```bash
 git clone https://github.com/your-username/ai-business-copilot.git
 cd ai-business-copilot
+
+### 2. Create and activate virtual environment
+``` bash
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+### 3. Install dependencies
+``` bash
+pip install -r requirements.txt
+
+
+
+
