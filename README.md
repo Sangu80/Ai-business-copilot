@@ -41,17 +41,32 @@ Here’s a high-level workflow showing how components interact from UI to LLM re
 
 ---
 
-## 🛠️ Setup Instructions
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/ai-business-copilot.git
-cd ai-business-copilot
-
-### 2. Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate        # On macOS/Linux
-venv\Scripts\activate           # On Windows
+<pre lang="markdown"> ## 🛠️ Setup Instructions 
+  ### 1. Clone the repo 
+  ```bash 
+     git clone https://github.com/your-username/ai-business-copilot.git 
+     cd ai-business-copilot ``` 
+  
+  ### 2. Create and activate a virtual environment 
+  ```bash 
+     python -m venv venv source venv/bin/activate # On macOS/Linux venv\Scripts\activate # On Windows ``` 
+  
+  ### 3. Install project dependencies 
+  ```bash 
+     pip install -r requirements.txt ``` 
+  
+  ### 4. Set up your environment variables 
+  ```bash 
+     cp .env.example .env # Open .env and add your OpenAI API key and MongoDB URI ``` 
+  
+  ### 5. Run the backend server (FastAPI) 
+  ```bash c
+     d backend uvicorn main:app --reload ``` 
+  
+  ### 6. Run the frontend app (Streamlit) 
+  ```bash cd ../streamlit_app streamlit run app.py ``` 
+  
+  ### 7. (Optional) Run ETL pipeline with PySpark ```bash cd ../etl python pyspark_etl.py ``` </pre>
 
 
 
