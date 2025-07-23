@@ -13,7 +13,8 @@ This project enables non-technical users to ask business questions like:
 
 Here’s a high-level workflow showing how components interact from UI to LLM response:
 
-![AI Business Copilot Workflow](docs/workflow.png)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/67be7bc8-aa31-4441-ade7-693d0ed93612" />
+
 
 ---
 
